@@ -1,5 +1,4 @@
 import os,pip,time,datetime
-from pywifi import const
 import itertools as its
 #导入库
 os.system("clear")
@@ -35,6 +34,7 @@ elif chose == 2:
     print('complete!Please restart the script and chose “3”')
 elif chose == 3:
     import pywifi
+    from pywifi import const
     nameWIFI = input("What is your wifi name?")
     # 测试连接，返回链接结果
     def wifiConnect(pwd):
